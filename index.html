@@ -6,7 +6,8 @@
 <section id="browse"><div class="intro"><div class="eyebrow">A little closer to nature</div><h1 id="browse-title">Every animal has a story.</h1><p id="intro-copy">Discover their names, their homes, and the lives they lead.</p></div><div class="searchrow"><input id="search" type="search" aria-label="Search animal, scientific or group names" placeholder="Search lion, cub, pride…" autocomplete="off"><button id="clear" aria-label="Clear search">Clear</button></div><div id="filters" class="filters" aria-label="Animal categories"></div><div class="countrow"><span id="count" class="muted" aria-live="polite"></span><span id="collection-label" class="eyebrow">Living collection</span></div><div id="grid" class="grid"></div><div id="empty" class="empty" hidden><h2 id="empty-title">No animals found</h2><p id="empty-copy"></p><button id="reset">Explore all animals</button></div></section>
 <article id="detail" hidden></article><div id="status" class="status" role="status"></div>
 <details id="about"><summary>About this preview</summary><p>This is a working design prototype with 29 living animal profiles plus an Extinct collection of historic species, dinosaurs and pterosaurs. Names, diet and habitat entries are editorial drafts. Numerical facts and conservation assessments are included only where noted; several sections still need research. Traditional collective names are expressions, not scientific terms.</p><p>Real, properly licensed species photographs are being added animal by animal. Entries without a photo still use a temporary animal symbol. The giraffe entry currently covers a genus rather than one species.</p><p>Browsing and searching use the information in this file, with no internet needed. Source links need a connection. Favorites save on this browser when storage is available. “Hear name” uses your device’s voice, which may require an internet connection. It is not a recording of the animal.</p><p>No accounts, analytics, advertising or purchases are included. This preview is not yet an installable iPhone app.</p></details><p class="notice">Animal Names • Preview 0.1<br>Made for curious minds, one animal at a time.</p></main><nav class="footnav" aria-label="Main navigation"><button id="explore" aria-pressed="true">Explore</button><button id="extinct" aria-pressed="false">Extinct <span id="extinctcount">20</span></button><button id="favorites" aria-pressed="false">♡ Favorites <span id="favcount">0</span></button></nav></div>
-<script id="animal-data" type="application/json">[
+<script id="animal-data" type="application/json">
+[
   {
     "name": "Lion",
     "scientific": "Panthera leo",
@@ -90,6 +91,14 @@
     "photoCredit": "Hobbyfotowiki",
     "photoLicense": "CC0 1.0 / public domain dedication",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Cheetah_(Acinonyx_jubatus),_Maasai_Mara.jpg",
+    "babyPhoto": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Cheetahs_%28Acinonyx_jubatus%29_cubs_playing_by_my_car_..._%2850938258912%29.jpg/1280px-Cheetahs_%28Acinonyx_jubatus%29_cubs_playing_by_my_car_..._%2850938258912%29.jpg",
+    "babyPhotoAlt": "Cheetah cubs playing together on the ground",
+    "babyPhotoFit": "contain",
+    "babyPhotoSource": "https://commons.wikimedia.org/wiki/File:Cheetahs_(Acinonyx_jubatus)_cubs_playing_by_my_car_..._(50938258912).jpg",
+    "babyPhotoCredit": "Bernard DUPONT",
+    "babyPhotoLicense": "CC BY-SA 2.0",
+    "babyLabel": "Cubs",
+    "babyNote": "Playful cheetah cubs in South Africa.",
     "male": "Male cheetah",
     "female": "Female cheetah",
     "young": "Cub",
@@ -222,7 +231,15 @@
     "photoAlt": "Two plains zebras standing close together in open grassland",
     "photoCredit": "Duvignau Alain",
     "photoLicense": "CC0 1.0 / public domain dedication",
-    "photoSource": "https://commons.wikimedia.org/wiki/File:Equus_quagga_(185908025).jpg"
+    "photoSource": "https://commons.wikimedia.org/wiki/File:Equus_quagga_(185908025).jpg",
+    "babyPhoto": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Plains_zebra_%28Equus_quagga%29_foal_suckling_Maputo.jpg/1280px-Plains_zebra_%28Equus_quagga%29_foal_suckling_Maputo.jpg",
+    "babyPhotoAlt": "Plains zebra foal nursing beside its mother",
+    "babyPhotoFit": "contain",
+    "babyPhotoSource": "https://commons.wikimedia.org/wiki/File:Plains_zebra_(Equus_quagga)_foal_suckling_Maputo.jpg",
+    "babyPhotoCredit": "Wikimedia Commons contributor",
+    "babyPhotoLicense": "License noted at source",
+    "babyLabel": "Foal",
+    "babyNote": "Young plains zebra foal nursing from its mother."
   },
   {
     "name": "Polar bear",
@@ -266,6 +283,14 @@
     "photoCredit": "Pixabay contributor 272447",
     "photoLicense": "CC0 1.0 / public domain dedication",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Red_fox_(2230731).jpg",
+    "babyPhoto": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Red_Fox_Kit_Yawn_%2853610315992%29.jpg/1280px-Red_Fox_Kit_Yawn_%2853610315992%29.jpg",
+    "babyPhotoAlt": "Red fox kit yawning in green grass",
+    "babyPhotoFit": "contain",
+    "babyPhotoSource": "https://commons.wikimedia.org/wiki/File:Red_Fox_Kit_Yawn_(53610315992).jpg",
+    "babyPhotoCredit": "Wikimedia Commons contributor",
+    "babyPhotoLicense": "License noted at source",
+    "babyLabel": "Kit",
+    "babyNote": "Young red fox kit resting in grass.",
     "male": "Dog fox",
     "female": "Vixen",
     "young": "Kit / cub",
@@ -1029,7 +1054,8 @@
     "status": "Near Threatened",
     "statusNote": "The longsnout seahorse is widely cited as Near Threatened because habitat damage and collection pressure can affect wild populations."
   }
-]</script>
+]
+</script>
 <script id="extinct-data" type="application/json">[
   {
     "id": "x0",
