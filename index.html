@@ -6,8 +6,7 @@
 <section id="browse"><div class="intro"><div class="eyebrow">A little closer to nature</div><h1 id="browse-title">Every animal has a story.</h1><p id="intro-copy">Discover their names, their homes, and the lives they lead.</p></div><div class="searchrow"><input id="search" type="search" aria-label="Search animal, scientific or group names" placeholder="Search lion, cub, pride…" autocomplete="off"><button id="clear" aria-label="Clear search">Clear</button></div><div id="filters" class="filters" aria-label="Animal categories"></div><div class="countrow"><span id="count" class="muted" aria-live="polite"></span><span class="eyebrow">First collection</span></div><div id="grid" class="grid"></div><div id="empty" class="empty" hidden><h2 id="empty-title">No animals found</h2><p id="empty-copy"></p><button id="reset">Explore all animals</button></div></section>
 <article id="detail" hidden></article><div id="status" class="status" role="status"></div>
 <details id="about"><summary>About this preview</summary><p>This is a working design prototype with 20 animal profiles. Names, diet and habitat entries are editorial drafts. Numerical facts and conservation assessments are included only where noted; several sections still need research. Traditional collective names are expressions, not scientific terms.</p><p>Real, properly licensed species photographs are being added animal by animal. Entries without a photo still use a temporary animal symbol. The giraffe entry currently covers a genus rather than one species.</p><p>Browsing and searching use the information in this file, with no internet needed. Source links need a connection. Favorites save on this browser when storage is available. “Hear name” uses your device’s voice, which may require an internet connection. It is not a recording of the animal.</p><p>No accounts, analytics, advertising or purchases are included. This preview is not yet an installable iPhone app.</p></details><p class="notice">Animal Names • Preview 0.1<br>Made for curious minds, one animal at a time.</p></main><nav class="footnav" aria-label="Main navigation"><button id="explore" aria-pressed="true">Explore</button><button id="favorites" aria-pressed="false">♡ Favorites <span id="favcount">0</span></button></nav></div>
-<script id="animal-data" type="application/json">
-[
+<script id="animal-data" type="application/json">[
   {
     "name": "Lion",
     "scientific": "Panthera leo",
@@ -652,16 +651,15 @@
     "id": "19",
     "source": "https://en.wikipedia.org/wiki/European_mantis",
     "sourceLabel": "Species reference • Wikipedia",
-    "size": "Not added to this preview yet.",
-    "weight": "Not added to this preview yet.",
-    "lifespan": "Wild and captive estimates still to be checked.",
-    "population": "No dated estimate verified for this preview.",
-    "trend": "Not verified yet",
-    "status": "Assessment pending",
-    "statusNote": "A dated conservation assessment will be added before release. This does not mean the species is safe or unassessed."
+    "size": "Adults are about 42–75 mm (1.7–3.0 in) long, with females generally larger than males.",
+    "weight": "No reliable standardized adult weight is available; body mass varies greatly with sex, recent feeding and reproductive condition.",
+    "lifespan": "Usually one generation per year in temperate climates. One life-cycle study reported total lifespans of about 89–150 days for males and 124–180 days for females; the adult stage lasted about 35–60 days in males and 70–90 days in females.",
+    "population": "No reliable global head count is available. The species is widespread and common overall, but local subpopulations can be small.",
+    "trend": "Unknown globally; some regional populations are expanding.",
+    "status": "Least Concern",
+    "statusNote": "IUCN published a Least Concern assessment for Mantis religiosa in 2016 (assessed in 2015). The global population trend was listed as unknown; habitat loss, degradation and direct killing can still threaten local populations."
   }
-]
-</script>
+]</script>
 <script>
 (()=>{'use strict';
 const data=JSON.parse(document.getElementById('animal-data').textContent),$=id=>document.getElementById(id);
